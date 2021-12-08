@@ -35,6 +35,10 @@ img {
 }
 
 /*==== BASE  ===========================================*/
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-weight: 400;
     font-size: 1rem;
@@ -72,7 +76,12 @@ body{
 
 .divider-1 {
     height: 1px;
-    background-image: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1) 0%, hsla(var(--hue), 65%, 88%, 0.34) 100%);
+    background-image: linear-gradient(270deg, hsla(var(--hue), 36%, 57%, 1), hsla(var(--hue), 65%, 88%, 0.34));
+}
+
+.divider-2 {
+    height: 1px;
+    background-image: linear-gradient(270deg, hsla(var(--hue), 65%, 88%, 0.34), hsla(var(--hue), 36%, 57%, 1));
 }
 
 /*==== LAYOUT  ===========================================*/
@@ -89,6 +98,18 @@ body{
     padding: 5rem 0;
 }
 
+.section .title {
+    margin-bottom: 1rem;
+}
+
+.section header {
+    margin-bottom: 4rem;
+}
+
+.section header p strong {
+    color: var(--base-color);
+}
+
 #header {
     border-bottom: 1px solid #e4e4e4;
     /* margin-bottom: 2rem; */
@@ -100,6 +121,11 @@ body{
     z-index: 100;
     background-color: var(--body-color);
     width: 100%;
+}
+
+
+#header.scroll {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 main {
@@ -161,6 +187,12 @@ nav ul li a:hover::after {
 nav .menu {
     opacity: 0;
     visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+}
+
+nav .menu ul {
+    display: none;
 }
 
 /* Mostart menu */
@@ -175,11 +207,12 @@ nav.show .menu {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-nav.show .menu {
     display: grid;
     place-content: center;
+}
+
+nav.show .menu ul {
+    display: grid;
 }
 
 nav.show ul.grid {
@@ -198,13 +231,16 @@ nav .icon-close {
     opacity: 0;
 
     position: absolute;
+    top: -1.5rem;
     right: 1.5rem;
-    /* TRANSIÇÃO BACANA */
+
+    transition: 0.2s;
 }
 
 nav.show div.icon-close {
     visibility: visible;
     opacity: 1;
+    top: 1.5rem;
 }
 
 /*==== HOME  ===========================================*/
@@ -253,4 +289,66 @@ nav.show div.icon-close {
 #home .text p {
     margin-bottom: 2rem;
     max-width: 100%;
+}
+
+/*==== ABOUT  ===========================================*/
+#about {
+    background-color: white;
+}
+
+#about .container {
+    margin: 0;
+} 
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+}
+
+#about .image img {
+    position: relative;
+}
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.25rem;
+}
+
+#about .text {
+    margin: 0 1.5rem;
+}
+
+/*==== SERVICES  ===========================================*/
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+}
+
+.card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
