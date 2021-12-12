@@ -412,3 +412,31 @@ nav.show div.icon-close {
 .swiper-pagination-bullet-active{
     background: var(--base-color);
 }
+
+/*==== CONTACT  ===========================================*/
+#contacts .grid {
+    gap: 4rem;
+}
+
+#contacts .text p {
+    margin-bottom: 2rem;
+}
+
+#contacts .button i,
+#contacts ul li i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+}
+
+#contacts ul.grid {
+    gap: 2rem;
+}
+
+#contacts ul li {
+    display: flex;
+    align-items: center;
+}
+
+#contacts ul li i {
+    color: var(--base-color);
+}
