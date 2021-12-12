@@ -10,6 +10,9 @@
         <!-- ICONS -->
         <link rel="stylesheet" href="assets/fonts/style.css">
 
+        <!-- SWIPER -->
+        <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
         <!-- STYLES -->
         <link rel="stylesheet" href="style.css">
 
@@ -101,65 +104,71 @@
 
             <!-- TESTIMONIALS -->
             <section class="section" id="testimonials">
-                <div class="container grid">
+                <div class="container">
                     <header>
                         <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                     </header>
-                    <div class="testimonials">
-                        <div class="testimonial">
-                            <blockquote>
-                                <p>
-                                    <span>&ldquo;</span>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sint asperiores. Quis omnis nostrum dignissimos aperiam suscipit nisi! Eos beatae blanditiis eum expedita doloremque repellat voluptate vel sequi, tempora provident.
-                                </p>
-                                <cite>
-                                    <img 
-                                    src="images/img1.jpg" 
-                                    alt="Foto de Jeffer"
-                                    />
-                                    Jeffer Marcelino
-                                </cite>
-                            </blockquote>
+                    <div class="testimonials swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <p>
+                                        <span>&ldquo;</span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sint asperiores. Quis omnis nostrum dignissimos aperiam suscipit nisi! Eos beatae blanditiis eum expedita doloremque repellat voluptate vel sequi, tempora provident.
+                                    </p>
+                                    <cite>
+                                        <img 
+                                        src="images/img1.jpg" 
+                                        alt="Foto de Jeffer"
+                                        />
+                                        Jeffer Marcelino
+                                    </cite>
+                                </blockquote>
+                            </div>
+    
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <p>
+                                        <span>&ldquo;</span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sint asperiores. Quis omnis nostrum dignissimos aperiam suscipit nisi! Eos beatae blanditiis eum expedita doloremque repellat voluptate vel sequi, tempora provident.
+                                    </p>
+                                    <cite>
+                                        <img 
+                                        src="images/img2.jpg" 
+                                        alt="Foto de Marcelino"
+                                        />
+                                        Marcelino Sunde
+                                    </cite>
+                                </blockquote>
+                            </div>
+    
+                            <div class="testimonial swiper-slide">
+                                <blockquote>
+                                    <p>
+                                        <span>&ldquo;</span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sint asperiores. Quis omnis nostrum dignissimos aperiam suscipit nisi! Eos beatae blanditiis eum expedita doloremque repellat voluptate vel sequi, tempora provident.
+                                    </p>
+                                    <cite>
+                                        <img 
+                                        src="images/img3.jpg" 
+                                        alt="Foto de Jeffer"
+                                        />
+                                        Jeffer Sunde
+                                    </cite>
+                                </blockquote>
+                            </div>
                         </div>
-
-                        <div class="testimonial">
-                            <blockquote>
-                                <p>
-                                    <span>&ldquo;</span>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sint asperiores. Quis omnis nostrum dignissimos aperiam suscipit nisi! Eos beatae blanditiis eum expedita doloremque repellat voluptate vel sequi, tempora provident.
-                                </p>
-                                <cite>
-                                    <img 
-                                    src="images/img2.jpg" 
-                                    alt="Foto de Marcelino"
-                                    />
-                                    Marcelino Sunde
-                                </cite>
-                            </blockquote>
-                        </div>
-
-                        <div class="testimonial">
-                            <blockquote>
-                                <p>
-                                    <span>&ldquo;</span>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, sint asperiores. Quis omnis nostrum dignissimos aperiam suscipit nisi! Eos beatae blanditiis eum expedita doloremque repellat voluptate vel sequi, tempora provident.
-                                </p>
-                                <cite>
-                                    <img 
-                                    src="images/img3.jpg" 
-                                    alt="Foto de Jeffer"
-                                    />
-                                    Jeffer Sunde
-                                </cite>
-                            </blockquote>
-                        </div>
-
+                    
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
             <!-- CONTACT -->
         </main>
 
+        <!-- SWIPER -->
+        <script src="swiper/swiper-bundle.min.js"></script>
         <script src="main.js"></script>
 
     </body>
