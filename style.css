@@ -144,6 +144,10 @@ main {
     color: var(--base-color);
 }
 
+.logo-alt span {
+    color: var(--body-color);
+}
+
 /*==== NAVIGATION  ===========================================*/
 nav {
     height: var(--header-height);
@@ -439,4 +443,28 @@ nav.show div.icon-close {
 
 #contacts ul li i {
     color: var(--base-color);
+}
+
+/*==== FOOTER  ===========================================*/
+footer {
+    background-color: var(--base-color);
+}
+
+footer .brand .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 00.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    margin-right: 2rem;
 }
