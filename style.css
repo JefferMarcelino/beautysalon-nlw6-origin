@@ -32,6 +32,9 @@ img {
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
+
+    /*  Fonts*/
+    --title-font-size: 1.875rem;
 }
 
 /*==== BASE  ===========================================*/
@@ -50,7 +53,7 @@ body{
 
 .title {
     font-weight: 700;
-    font-size: 1.875rem;
+    font-size: var(--title-font-size);
     font-family: "Poppins", sans-serif;
     color: var(--title-color);
     -webkit-font-smoothing: auto;
@@ -503,3 +506,16 @@ footer .social a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/*==== MEDIA QUERIES ====================================*/
+/* Extra largue devices: 1200 > */
+/* Large devices: 1023 > */
+
+/* Large devices: 992 > */
+@media (min-width: 992px) {
+    :root {
+        --title-font-size: 2.2rem
+    }
+}
+/* Medium devices: 767 > */
