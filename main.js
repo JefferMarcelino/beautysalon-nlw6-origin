@@ -44,6 +44,12 @@ const swiper = new Swiper('.swiper-container', {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+        767: {
+            sliderPerView: 2,
+            setWrapperSize: true
+        }
+    }
 });
 
 /* ScrollReaveal */
