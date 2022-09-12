@@ -524,10 +524,32 @@ footer .social a:hover {
 /*==== MEDIA QUERIES ====================================*/
 /* Extra largue devices: 1200 > */
 @media (min-width: 1200px) {
+    /* reusable classes */
+    div.container {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* home */
+    section#home .image {
+        order: 1;
+        width: 600px;
+    }
+
+    /* about */
+    section#about .image {
+        width: 600px;
+    } 
+}
+
+
+/* Large devices: 1023 > */
+@media (min-width: 1023px) {
 
     /* reusable classes */
     .container {
-        max-width: 1120px;
+        max-width: 950px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -588,14 +610,9 @@ footer .social a:hover {
 
     #home .image {
         order: 1;
-        width: 600px;
+        width: 500px;
     }
 
-    #home .text {
-        order: 0;
-        max-width: 24rem;
-        text-align: left;
-    }
 
     /* about */
     #about .container {
@@ -604,8 +621,8 @@ footer .social a:hover {
     }
 
     #about .image {
-        width: 600px;
-    }
+        width: 500px;
+    } 
 
     /* services */
     .cards {
@@ -648,7 +665,7 @@ footer .social a:hover {
         font-size: 2.25rem;
     }
 }
-/* Large devices: 1023 > */
+
 
 /* Large devices: 992 > */
 @media (min-width: 992px) {
@@ -657,4 +674,12 @@ footer .social a:hover {
         --subtitle-font-size: 1.125rem;
     }
 }
+
+
 /* Medium devices: 767 > */
+@media (min-width: 767px) {
+    /* layout */
+    main {
+        margin-top: var(--header-height);
+    }
+}
